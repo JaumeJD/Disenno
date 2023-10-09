@@ -1,0 +1,22 @@
+label {
+    font-size: large;
+    font-weight: bold;
+}
+
+input {
+    width: 90%;
+}
+
+div {}
+
+div {
+    width: 50%;
+}
+
+.div1 {
+    background-color: yellowgreen;
+}
+
+.div2 {
+    background-color: aquamarine;
+}
