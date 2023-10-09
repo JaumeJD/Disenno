@@ -1,22 +1,68 @@
+body {
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 label {
     font-size: large;
     font-weight: bold;
 }
 
-input {
-    width: 90%;
+input,
+select {
+    padding: 8px;
 }
 
-div {}
+#wrapper {
+    display: flex;
+    gap: 20px;
+}
 
-div {
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
     width: 50%;
 }
 
-.div1 {
-    background-color: yellowgreen;
+.field-container {
+    display: flex;
+    gap: 20px;
 }
 
-.div2 {
-    background-color: aquamarine;
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.input-checkbox {
+    display: flex;
+    gap: 6px;
+}
+
+.checkbox {
+    height: 13px;
+    margin: 0px;
+}
+
+.checkbox-label {
+    width: fit-content;
+    font-size: medium;
+    font-weight: lighter;
+}
+
+#submit-button {
+    margin-top: 20px;
+    padding: 6px 10px;
+    text-transform: uppercase;
+    color: white;
+    background-color: darkslategray;
+    border: none;
+    transition: 4s background-color;
+}
+
+#submit-button:hover {
+    background-color: rgb(78, 112, 112);
 }
