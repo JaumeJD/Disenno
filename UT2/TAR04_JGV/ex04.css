@@ -1,23 +1,29 @@
+/*Espacio a la página con respecto de la ventana y la fuente de la página*/
 body {
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*El texto de todos los label pasa a ser grande y negrita*/
 label {
     font-size: large;
     font-weight: bold;
 }
 
+/*¡Cuidado al crear clases globales! Agranda los campos de inputs y selects*/
 input,
 select {
     padding: 8px;
 }
 
+/*Añade clase flex para los dos contenedores y un gap entre ellos*/
 #wrapper {
     display: flex;
     gap: 20px;
 }
 
+/*Añade flex a los divs de cada columna, direcciona verticalmente y 
+añade espacios*/
 .container {
     display: flex;
     flex-direction: column;
@@ -25,11 +31,15 @@ select {
     width: 50%;
 }
 
+/*Añade flex a los divs que contienen otros divs dentro para ponerlos 
+horizontalmente*/
 .field-container {
     display: flex;
     gap: 20px;
 }
 
+/*Añade flex a labels e inputs, verticalmente, margenes y que ocupen el 100%,
+la mita del div en caso de ser dos*/
 .input-field {
     display: flex;
     flex-direction: column;
@@ -37,22 +47,27 @@ select {
     width: 100%;
 }
 
+/*Añade flex a los checkbox, asi se colocan horizontalmente y se les da un gap*/
 .input-checkbox {
     display: flex;
     gap: 6px;
 }
 
+/*Se igualan lados del checkbox y se pega a la izquierda*/
 .checkbox {
     height: 13px;
     margin: 0px;
 }
 
+/*Se especifica que el texto de los checkbox sea grande y en negrita.
+Ademas, */
 .checkbox-label {
-    width: fit-content;
+    /*width: fit-content; Por si acaso*/
     font-size: medium;
     font-weight: lighter;
 }
 
+/*Clase para estilar el boton de formulario*/
 #submit-button {
     margin-top: 20px;
     padding: 6px 10px;
@@ -60,9 +75,9 @@ select {
     color: white;
     background-color: darkslategray;
     border: none;
-    transition: 4s background-color;
 }
 
+/*Prueba de transicion para el boton*/
 #submit-button:hover {
     background-color: rgb(78, 112, 112);
 }

@@ -15,40 +15,40 @@
         <div id="wrapper">
             <div class="container">
                 <div class="input-field">
-                    <label for="nombre">Nombre</label>
+                    <label for="nombre">Nombre <span style="color: red;">*</span></label>
                     <input placeholder="Introduzca su nombre" type="text" name="nombre" required />
                 </div>
 
                 <div class="field-container">
                     <div class="input-field ">
-                        <label for="apellidos">Apellidos</label>
+                        <label for="apellidos">Apellidos <span style="color: red;">*</span></label>
                         <input placeholder="Introduzca sus apellidos" type="text" name="apellidos" required />
                     </div>
 
                     <div class="input-field ">
-                        <label for="postal">Código postal</label>
+                        <label for="postal">Código postal <span style="color: red;">*</span></label>
                         <input placeholder="Introduzca su Código postal" type="text" name="postal" required />
                     </div>
                 </div>
 
                 <div class="input-field">
-                    <label for="nick">Nick</label>
+                    <label for="nick">Nick <span style="color: red;">*</span></label>
                     <input placeholder="Introduzca nombre de usuario" type="text" name="nick" required />
                 </div>
 
                 <div class="input-field">
-                    <label for="email">Dirección de email</label>
+                    <label for="email">Dirección de email <span style="color: red;">*</span></label>
                     <input placeholder="Introduzca una dirección de email" type="text" name="email" required />
                 </div>
 
                 <div class="input-field">
-                    <label for="password">Contraseña</label>
+                    <label for="password">Contraseña <span style="color: red;">*</span></label>
                     <input placeholder="Mínimo 8 caractéres. Debe incluir números y mayúsculas" type="password"
                         name="password" required />
                 </div>
 
                 <div class="input-field">
-                    <label for="password2">Repetir contraseña</label>
+                    <label for="password2">Repetir contraseña <span style="color: red;">*</span></label>
                     <input placeholder="Vuelva a introducir la contraseña" type="password" name="password2" required />
                 </div>
 
@@ -58,7 +58,7 @@
                 </div>
 
                 <div class="input-checkbox">
-                    <input class="checkbox" type="checkbox" name="privacidad" value="privacidad">
+                    <input class="checkbox" type="checkbox" name="privacidad" value="privacidad" />
                     <label class="checkbox-label">Acepto la política de Privacidad</label>
                 </div>
             </div>
@@ -96,7 +96,8 @@
                     </div>
                     <div class="input-field ">
                         <label for="dni">DNI</label>
-                        <input placeholder="Introduzca su DNI" type="text" name="dni" />
+                        <input placeholder="Introduzca su DNI" type="text" id="dni" maxlength="9"
+                            pattern="[0-9]{8}[A-Z]" />
                     </div>
                 </div>
 
@@ -113,7 +114,7 @@
                     </div>
                     <div class="input-field ">
                         <label for="intereses">Intereses</label>
-                        <input placeholder="0 seleccionados" type="text" name="intereses" />
+                        <input placeholder="0 seleccionados" type="text" name="intereses">
                     </div>
                 </div>
 
@@ -131,8 +132,7 @@
                 <div class="input-checkbox">
                     <input class="checkbox" type="checkbox" name="novedades" value="novedades">
                     <label class="checkbox-label">Deseo recibir novedades y comunicaciones relativas a terceras empresas
-                        de
-                        estos sectores, incluso por vía electrónica</label>
+                        de estos sectores, incluso por vía electrónica</label>
                 </div>
             </div>
         </div>
