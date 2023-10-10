@@ -1,17 +1,20 @@
 .background {
+    display: flex;
+    flex-direction: column;
     margin: 30px;
-    background-color: rgb(180, 96, 96);
-    padding: 30px;
-}
-
-td,
-h1 {
-    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 20px;
 }
 
 .container {
     display: flex;
     justify-content: center;
+    padding: 20px;
+    background-color: rgb(240, 233, 233);
 }
 
 .table-field {
@@ -19,4 +22,15 @@ h1 {
     flex-direction: column;
     width: 60%;
     background-color: white;
+}
+
+table {
+    margin: 10px;
+}
+
+/*TOCA CREAR AQUÍ LAS CLASES PARA PINTAR LA TABLA*/
+
+td,
+h1 {
+    text-align: center;
 }
