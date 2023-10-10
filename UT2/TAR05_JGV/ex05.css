@@ -1,36 +1,60 @@
 .background {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
-    border: 1px;
-    border-color: grey;
-    border-style: solid;
-    border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1px;
+  border-color: grey;
+  border-style: solid;
+  border-radius: 20px;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: rgb(240, 233, 233);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(240, 233, 233);
 }
 
 .table-field {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  background-color: white;
 }
 
 table {
-    margin: 10px;
+  margin: 10px;
 }
 
-/*TOCA CREAR AQUÍ LAS CLASES PARA PINTAR LA TABLA*/
+.fondo-azul {
+  background-color: blue;
+}
+
+.fondo-rojo {
+  background-color: red;
+  color: white;
+}
+
+tr:nth-child(n+2) td:first-child {
+  background-color: red;
+  color: white;
+}
+
+tr:nth-last-child() td:nth-last-child() {
+  background-color: blue;
+}
+
+.fondo-gris {
+  background-color: grey;
+}
+
+.fondo-amarillo {
+  background-color: yellow;
+}
 
 td,
 h1 {
-    text-align: center;
+  text-align: center;
 }
