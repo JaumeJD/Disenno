@@ -37,13 +37,9 @@ table {
   color: white;
 }
 
-tr:nth-child(n+2) td:first-child {
+tr:nth-child(n+2) td:nth-child(-n+1) {
   background-color: red;
   color: white;
-}
-
-tr:nth-last-child() td:nth-last-child() {
-  background-color: blue;
 }
 
 .fondo-gris {
