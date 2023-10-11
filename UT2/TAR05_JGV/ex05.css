@@ -1,56 +1,63 @@
 .background {
-  display: flex;
-  flex-direction: column;
-  margin: 30px;
-  padding: 20px;
-  background-color: rgb(255, 255, 255);
-  border: 1px;
-  border-color: grey;
-  border-style: solid;
-  border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 20px;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  background-color: rgb(240, 233, 233);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(240, 233, 233);
 }
 
 .table-field {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: white;
 }
 
 table {
-  margin: 10px;
+    margin: 10px;
 }
 
 .fondo-azul {
-  background-color: blue;
+    background-color: blue;
 }
 
 .fondo-rojo {
-  background-color: red;
-  color: white;
+    background-color: red;
+    color: white;
 }
 
-tr:nth-child(n+2) td:nth-child(-n+1) {
-  background-color: red;
-  color: white;
+tr:nth-child(n+2) td:nth-child(1) {
+    background-color: red;
+    color: white;
 }
 
-.fondo-gris {
-  background-color: grey;
+tr:nth-child(1) td:nth-child(n+2) {
+    background-color: blue;
+}
+
+tr:nth-child(2) td:nth-child(n+2) {
+    padding: 20px 0px;
+    background-color: grey;
+    font-weight: bold;
 }
 
 .fondo-amarillo {
-  background-color: yellow;
+    background-color: yellow;
 }
 
 td,
 h1 {
-  text-align: center;
+    text-align: center;
+    font-weight: bold;
 }
