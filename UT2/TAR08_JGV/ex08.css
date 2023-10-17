@@ -1,0 +1,36 @@
+p {
+    width: 411px;
+    color: green;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    align-self: center;
+}
+
+tr:first-child td::first-letter {
+    font-weight: bold;
+}
+
+tr:first-child td {
+    text-align: center;
+}
+
+tr:nth-child(n+2) td:first-child {
+    background-color: green;
+}
+
+tr:nth-child(4) td:last-child {
+    background-color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
+
+tr td:last-child:hover {
+    font-size: xx-large;
+}
