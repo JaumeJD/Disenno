@@ -11,6 +11,7 @@ a {
 
 input {
     padding: 10px;
+    border: 1px solid red;
 }
 
 tr:first-child td::first-letter {
