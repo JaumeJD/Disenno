@@ -9,8 +9,8 @@ a {
     text-decoration: none;
 }
 
-table {
-    align-self: center;
+input {
+    padding: 10px;
 }
 
 tr:first-child td::first-letter {
