@@ -5,6 +5,10 @@ p {
     text-align: center;
 }
 
+p:active {
+    color: red;
+}
+
 a {
     text-decoration: none;
 }
@@ -12,6 +16,10 @@ a {
 input {
     padding: 10px;
     border: 1px solid red;
+}
+
+input:active {
+    border-color: black;
 }
 
 tr:first-child td::first-letter {
