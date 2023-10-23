@@ -33,11 +33,14 @@ footer {
 }
 
 .nav-field {
-    display: flex;
-    flex-direction: column;
+    float: left;
     width: 30%;
     height: 640px;
     padding-left: 10px;
+}
+
+.nav-field p {
+    padding-bottom: 24px;
 }
 
 .container-field {
