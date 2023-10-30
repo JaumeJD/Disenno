@@ -1,0 +1,15 @@
+ul {
+    background-color: rgb(163, 221, 223);
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: auto;
+    width: 200px;
+}
+
+img {
+    height: 900px;
+    width: 1900px;
+    -webkit-mask-image: radial-gradient(circle at 50%, black 20%, rgba(255, 255, 255, 0.4) 30%);
+}
