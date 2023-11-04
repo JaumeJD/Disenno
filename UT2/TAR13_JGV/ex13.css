@@ -56,7 +56,7 @@ header h4 {
 }
 
 .content_wrapper main img {
-    width: 800px;
+    width: 90%;
     height: 340px;
     margin-bottom: 0px;
 }
@@ -69,6 +69,10 @@ header h4 {
 
 .content_wrapper article {
     width: 35%;
+}
+
+.content_wrapper article h2 {
+    padding: 0px 5px;
 }
 
 .articles {
