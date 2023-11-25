@@ -1,0 +1,67 @@
+menu {
+    display: flex;
+    gap: 4%;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+
+.cabecera {
+    text-align: center;
+}
+
+.cabecera p:nth-child(1) {
+    color: gray;
+    font-style: italic;
+}
+
+.cabecera p:nth-child(2) {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cabecera p:nth-child(3) {
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wrapper {
+    background-color: rgb(240, 240, 240);
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.container {
+    margin: 10px;
+    text-align: center;
+}
+
+img {
+    height: 260px;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+    font-weight: bold;
+}
+
+.price p:nth-child(1) {
+    color: red;
+}
+
+.price p:nth-child(2) {
+    text-decoration-line: line-through;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
