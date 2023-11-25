@@ -1,0 +1,197 @@
+body {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-color: rgb(100, 150, 100);
+    border-radius: 8px;
+}
+
+header h2 {
+    margin-bottom: -12px;
+}
+
+header p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p:nth-child(1) {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.page {
+    display: flex;
+    gap: 10px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+    padding-top: 14px;
+    border-radius: 12px;
+    background-color: rgb(208, 255, 0);
+    width: 20%;
+    font-weight: bold;
+    height: 74px;
+}
+
+.select {
+    display: none;
+    background-color: rgb(208, 255, 0);
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    width: 76%;
+}
+
+.content-double {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+}
+
+.content-double .content {
+    width: 100%;
+}
+
+.content {
+    background-color: rgb(140, 180, 200);
+    border-radius: 8px;
+    padding: 8px;
+    width: 30%;
+    color: white;
+}
+
+.container .content:nth-child(1) {
+    width: 40%;
+}
+
+.content-double .content:nth-child(1) {
+    height: 90px;
+    width: 40%;
+}
+
+.content-double .content:nth-child(2) {
+    height: 120px;
+    width: 60%;
+}
+
+footer {
+    background-color: rgb(100, 150, 100);
+    border-radius: 8px;
+}
+
+footer p:nth-child(1) {
+    margin-bottom: 0px;
+}
+
+footer p:nth-child(2) {
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 992px) {
+    header p {
+        font-size: 26px;
+    }
+
+    .container>.content:nth-child(1) {
+        width: 50%;
+        height: 160px;
+    }
+
+    .content-double {
+        flex-direction: column;
+        gap: 18px;
+        width: 44%;
+    }
+
+    .content-double .content:nth-child(1),
+    .content-double .content:nth-child(2) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header {
+        font-size: 20px;
+        padding-left: 46px;
+        padding-right: 46px;
+    }
+
+    .page {
+        gap: 20px;
+    }
+
+    .menu {
+        width: 36%;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 56%;
+        gap: 20px;
+    }
+
+    .container>.content:nth-child(1) {
+        width: 80%;
+    }
+
+    .content-double {
+        width: 80%;
+    }
+
+    .content-double .content:nth-child(1),
+    .content-double .content:nth-child(2) {
+        width: 100;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .page {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    header p {
+        display: none;
+    }
+
+    header {
+        margin-bottom: 24px;
+        padding-left: 4px;
+        text-align: left;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .select {
+        display: block;
+        border-radius: 8px;
+        padding: 2px;
+    }
+
+    .select select {
+        border-radius: 4px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container>.content:nth-child(1) {
+        width: 96%;
+    }
+
+    .content-double {
+        width: 96%;
+    }
+}
