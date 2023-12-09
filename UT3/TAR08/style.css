@@ -1,0 +1,87 @@
+table {
+    border-collapse: collapse;
+    border-bottom: 1px solid rgb(60, 60, 60);
+    text-align: center;
+    width: 100%;
+}
+
+.container1,
+.container2,
+.container3 {
+    width: 60%;
+    margin: 20px auto;
+}
+
+th {
+    padding: 6px;
+    border-spacing: 0px;
+}
+
+td {
+    padding: 10px 0px;
+}
+
+img {
+    height: 30px;
+}
+
+.user1 tr:nth-child(1),
+.user2 tr:nth-child(1),
+.user3 tr:nth-child(1) {
+    color: white;
+}
+
+.user1 tr:nth-child(1) {
+    background-color: rgb(80, 80, 80);
+}
+
+.user2 tr:nth-child(1) {
+    background-color: rgb(99, 44, 226);
+}
+
+.user3 tr:nth-child(1) {
+    background-color: rgb(255, 81, 0);
+}
+
+@media screen and (max-width: 1024px) {
+    .container2 {
+        overflow-x: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .hid1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .user3 {
+        display: none;
+    }
+
+    .prof3 {
+        display: table;
+    }
+
+    .prof3 tr {
+        border-bottom: 1px solid gray;
+    }
+
+    .prof3 tr td {
+        padding-top: 20px;
+    }
+
+    span {
+        background-color: red;
+        padding: 10px;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hid2 {
+        display: none;
+    }
+}
