@@ -1,0 +1,103 @@
+body {
+    font-family: 'Comic Neue', cursive;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    padding-left: 12px;
+}
+
+.menu_item {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.verde {
+    color: rgb(17, 182, 17);
+}
+
+.main_text {
+    background-color: gray;
+    padding: 2px 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+.menu_item {
+    display: none;
+}
+
+@media screen and (min-width: 576px) {
+    .icon {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+    }
+
+    .main_text {
+        width: 50%;
+        font-size: 12px;
+    }
+
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+        width: 50%;
+        height: 100%;
+    }
+
+    .novedades {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 36px;
+    }
+
+    .novedades h2 {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        flex-direction: row-reverse;
+    }
+
+    .main_text {
+        font-size: 10px;
+    }
+
+    .images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hidden {
+        display: inline-block;
+    }
+}

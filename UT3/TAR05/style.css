@@ -1,0 +1,53 @@
+.container {
+    display: grid;
+    height: 400px;
+    max-width: 1392px;
+    margin: 0px auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas:
+        "red red red"
+        "blue blue blue"
+        "yellow yellow yellow"
+        "green green green";
+}
+
+.red {
+    grid-area: red;
+    background-color: red;
+}
+
+.blue {
+    grid-area: blue;
+    background-color: blue;
+}
+
+.yellow {
+    grid-area: yellow;
+    background-color: yellow;
+}
+
+.green {
+    grid-area: green;
+    background-color: green;
+}
+
+@media screen and (min-width:576px) {
+    .container {
+        grid-template-areas:
+            "red blue blue"
+            "red yellow yellow"
+            "green green green"
+            "green green green";
+    }
+}
+
+@media screen and (min-width:992px) {
+    .container {
+        grid-template-areas:
+            "green blue red"
+            "green blue red"
+            "green yellow red"
+            "green yellow red";
+    }
+}
