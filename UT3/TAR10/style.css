@@ -1,0 +1,8 @@
+.container {
+    width: 100%;
+    height: 50vw;
+    background:
+        url(./img/fondo3.gif) no-repeat bottom right,
+        url(./img/fondo2.gif) no-repeat center,
+        url(./img/fondo1.jpg);
+}
