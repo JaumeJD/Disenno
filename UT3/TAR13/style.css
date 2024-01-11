@@ -1,0 +1,89 @@
+.container {
+    height: 94vh;
+    width: 100%;
+}
+
+.square {
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    animation: move 3s alternate 3;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50% {
+        transform: translate(900px, 400px);
+    }
+
+    75% {
+        transform: translate(500px, 800px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.circle {
+    margin: 40px auto;
+    background-color: green;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+
+.circle:hover {
+    background-color: red;
+    animation: initialBlink 1s, changeColorAndSize 0.5s 1s infinite alternate;
+}
+
+@keyframes initialBlink {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(0.8);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes changeColorAndSize {
+
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: orange;
+    }
+
+    50% {
+        background-color: yellow;
+        transform: scale(0.6);
+    }
+
+    75% {
+        background-color: purple;
+    }
+
+    100% {
+        background-color: pink;
+        transform: scale(1.4);
+    }
+}
