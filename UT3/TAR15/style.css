@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    perspective: 500px;
+}
+
+.title,
+.credits {
+    color: gold;
+}
+
+.title {
+    text-align: center;
+    transform: translateY(300px);
+    animation: vanish 5s forwards;
+    font-size: 40px;
+}
+
+@keyframes vanish {
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+.credits {
+    text-align: justify;
+    margin: auto;
+    width: 340px;
+    font-size: 26px;
+    animation: creditsUp 20s linear forwards;
+}
+
+@keyframes creditsUp {
+    0% {
+        transform: rotateX(20deg) translateY(100%);
+    }
+
+    100% {
+        transform: rotateX(25deg) translateY(-200%);
+    }
+}
