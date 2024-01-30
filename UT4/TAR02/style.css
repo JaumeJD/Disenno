@@ -1,0 +1,48 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-areas: "nav nav nav" "img1 img2 .";
+  column-gap: 30px;
+}
+
+.container nav {
+  background-color: rgb(152, 117, 175);
+  grid-area: nav;
+}
+
+.container nav ul {
+  display: flex;
+  gap: 38px;
+  padding: 10px 46px;
+}
+
+.container nav ul .active {
+  color: white;
+}
+
+.container nav ul li {
+  list-style: none;
+  font-size: 26px;
+}
+
+.container :nth-child(2) {
+  grid-area: img1;
+}
+
+.container :nth-child(3) {
+  grid-area: img2;
+}
+
+.container .card {
+  border: 1px solid black;
+  border-radius: 14px;
+  text-align: center;
+  padding: 20px;
+}
+
+.container .card img {
+  border-radius: 38px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

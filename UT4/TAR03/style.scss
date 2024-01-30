@@ -1,0 +1,83 @@
+$grey-light: rgb(160, 160, 160);
+$grey-hard: rgb(120, 120, 120);
+$red: red;
+$yellow: yellow;
+$green: green;
+$blue: blue;
+
+@for $i from 1 through 4 {
+    @if $i%2==0 {
+        tbody {
+            :nth-child(#{$i}) {
+                background-color: $grey-light;
+            }
+        }
+    }
+
+    @else {
+        tbody {
+            :nth-child(#{$i}) {
+                background-color: $grey-hard;
+            }
+        }
+    }
+}
+
+.btn {
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.btn-error {
+    background-color: $red;
+}
+
+.btn-warning {
+    background-color: $yellow;
+}
+
+.btn-accepted {
+    background-color: $green;
+}
+
+.btn-normal {
+    display: inline-flex;
+    background-color: $blue;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+
+    th,
+    td {
+        border: 1px solid black;
+        padding: 6px;
+    }
+}
+
+.row {
+    display: grid;
+    grid-template-areas: "col-2 col-2 col-4 col-4 col-4 col-4 col-1 last-col";
+    height: 100px;
+
+    div {
+        border: 1px solid black;
+    }
+
+    .col-2 {
+        grid-area: col-2;
+    }
+
+    .col-4 {
+        grid-area: col-4;
+    }
+
+    :nth-child(3) {
+        grid-area: col-1;
+    }
+
+    :nth-child(4) {
+        grid-area: last-col;
+    }
+}

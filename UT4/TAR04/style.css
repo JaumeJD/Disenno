@@ -1,0 +1,164 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  grid-template-areas: "nav nav nav" "img1 img2 .";
+  column-gap: 30px;
+}
+.container nav {
+  background-color: rgb(152, 117, 175);
+  grid-area: nav;
+}
+.container nav ul {
+  display: flex;
+  gap: 38px;
+  padding: 10px 46px;
+}
+.container nav ul .active {
+  color: white;
+}
+.container nav ul li {
+  list-style: none;
+  font-size: 26px;
+}
+.container :nth-child(2) {
+  grid-area: img1;
+}
+.container :nth-child(3) {
+  grid-area: img2;
+}
+.container .card {
+  border: 1px solid black;
+  border-radius: 14px;
+  text-align: center;
+  padding: 20px;
+}
+.container .card img {
+  border-radius: 38px;
+  width: 100%;
+}
+
+tbody :nth-child(1) {
+  background-color: rgb(120, 120, 120);
+}
+
+tbody :nth-child(2) {
+  background-color: rgb(160, 160, 160);
+}
+
+tbody :nth-child(3) {
+  background-color: rgb(120, 120, 120);
+}
+
+tbody :nth-child(4) {
+  background-color: rgb(160, 160, 160);
+}
+
+.btn {
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.btn-error {
+  background-color: red;
+}
+
+.btn-warning {
+  background-color: yellow;
+}
+
+.btn-accepted {
+  background-color: green;
+}
+
+.btn-normal {
+  display: inline-flex;
+  background-color: blue;
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+table th,
+table td {
+  border: 1px solid black;
+  padding: 6px;
+}
+
+.row {
+  display: grid;
+  grid-template-areas: "col-2 col-2 col-4 col-4 col-4 col-4 col-1 last-col";
+  height: 100px;
+}
+.row div {
+  border: 1px solid black;
+}
+.row .col-2 {
+  grid-area: col-2;
+}
+.row .col-4 {
+  grid-area: col-4;
+}
+.row :nth-child(3) {
+  grid-area: col-1;
+}
+.row :nth-child(4) {
+  grid-area: last-col;
+}
+
+nav {
+  background-color: rgb(152, 117, 175);
+}
+nav ul {
+  display: flex;
+  gap: 38px;
+  padding: 10px 46px;
+}
+nav ul .active {
+  color: white;
+}
+nav ul li {
+  list-style: none;
+  font-size: 26px;
+}
+
+.images-field {
+  display: flex;
+}
+.images-field .card {
+  border: 1px solid black;
+  border-radius: 14px;
+  text-align: center;
+  padding: 20px;
+}
+.images-field .card img {
+  border-radius: 38px;
+  width: 100%;
+}
+
+.buttons-field {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.buttons-field .btn {
+  border-radius: 14px;
+  padding: 6px;
+  box-shadow: inset 0px -4px 6px 0px black;
+}
+.buttons-field .btn-error {
+  background-color: red;
+}
+.buttons-field .btn-warning {
+  background-color: yellow;
+}
+.buttons-field .btn-accepted {
+  background-color: green;
+}
+.buttons-field .btn-normal {
+  display: inline-flex;
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.css.map */
