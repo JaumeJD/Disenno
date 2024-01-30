@@ -1,0 +1,29 @@
+@mixin encabezados($tamh1) {
+    h1 {
+        font-size: $tamh1;
+    }
+
+    h2 {
+        font-size: $tamh1 - 0.2em;
+    }
+
+    h3 {
+        font-size: $tamh1 - 0.4em;
+    }
+}
+
+body {
+    @include encabezados(1.5em)
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        @include encabezados(2em);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        @include encabezados(2.5em);
+    }
+}
