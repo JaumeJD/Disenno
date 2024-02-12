@@ -1,0 +1,24 @@
+body {
+    font-family: Opens Sans Condensed;
+    margin: 10px;
+}
+
+.tamano {
+    font-size: 20px;
+}
+
+.parrafo1 {
+    margin-top: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    border-top: 2px solid grey;
+}
+
+.blue-span {
+    color: blue;
+    text-decoration: none;
+}
+
+.parrafo2 {
+    font-weight: bold;
+}
