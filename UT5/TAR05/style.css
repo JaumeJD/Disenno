@@ -1,0 +1,13 @@
+.cont2 {
+    display: none;
+}
+
+@media screen and (max-width: 540px) {
+    .cont1 {
+        display: none;
+    }
+
+    .cont2 {
+        display: block;
+    }
+}
